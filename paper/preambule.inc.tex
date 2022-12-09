@@ -44,6 +44,8 @@
 
 \frenchspacing
 \usepackage{indentfirst} % Красная строка
+\setlength\parindent{1.25cm}
+
 
 \usepackage{titlesec}
 \titleformat{\chapter}{\LARGE\bfseries}{\thechapter}{20pt}{\LARGE\bfseries}
@@ -140,7 +142,16 @@
 \usepackage{csvsimple}
 
 
-\setcounter{page}{2}
+
 \usepackage{threeparttable}
 \usepackage{dcolumn}
 \usepackage{multirow}
+\usepackage[figure,table]{totalcount} % Подсчет изображений, таблиц
+
+\usepackage{placeins}
+\usepackage{lastpage} % Для подсчета числа страниц
+
+\usepackage{pdfpages}
+\makeatletter
+\renewcommand{\@biblabel}[1]{#1. \hfill}
+\makeatother

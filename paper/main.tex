@@ -6,8 +6,17 @@
 	
 	%%\include{00-title}
 	
+	\includepdf[pages=-]{assets/TW.pdf}
+	\normalsize
+	\setcounter{page}{5}
+	\include{01-abstract}
+	
+	\renewcommand{\contentsname}{\normalsize\bfseries\centering СОДЕРЖАНИЕ}
+	\small
 	\tableofcontents
-	\setcounter{page}{3}
+	\normalsize
+	
+	\pagebreak
 	
 	\include{01-intro}
 	\include{02-analyth}
@@ -15,5 +24,7 @@
 	\include{06-conclude}
 	
 	\include{07-refs}
+	
+	\include{08-pril-a}
 	
 \end{document}
